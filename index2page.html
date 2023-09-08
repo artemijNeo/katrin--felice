@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katrin Felice</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="libs/nouislider.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="menu-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="logo_a" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <div class="nav-body">
+                    <a class="navbtn" href="index.html" id="mainNavBtn">Главная</a>
+                    <a class="navbtn" href="" id="paintingsNavBtn" >Работы</a>
+                    <a class="navbtn" href="" id="reviewsNavBtn">Отзывы</a>
+                </div>
+                <a class="tel" href="tel:+79650609990">+7 965 060-99-90</a>
+            </div>
+        </div>
+    </header>
+    <section class="paintings">
+        <div class="productPageHandler">
+            <div class="productPage">
+                <img src="img/paintings/lion.png" id="productPageImg" alt="">
+                <div>
+                    <p id="productPageName">Царь</p>
+                    <p id="productPageDesc">Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание<br> </p>
+                    <p id="productPageSize">Размер: 50x50см</p>
+                    <p id="productPageCategory">Категория: Животные</p>
+                    <p id="productPageTechnique">Техника: Смешанная техника</p>
+                    <p id="productPagePrice">100 000 ₽</p>
+                    <span id="productPageOrderBtn">Заказать</span>
+                </div>
+                <img src="img/closeBtnWhite.png" class="closeBtn" id="productPageCloseBtn" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="searchAndFilter">
+                <div class="searchDiv">
+                    <input type="text" id="paintingsFilter" placeholder="Введите запрос">
+                    <img src="img/search.svg" alt="" id="searchBtn">
+                </div>
+                <div class="filterDiv">
+                    <img src="img/filter.svg" alt="">
+                </div>
+                <div class="filters">
+                    <div class="priceFilter">
+                        <h4>Цена</h4>
+                        <div class="inputs">
+                            <div class="min">
+                                <span>от </span>
+                                <input type="number" min="30 000" max="110 000" name="" id="minPriceInput">
+                                <span> ₽</span>
+                            </div>
+                            <div class="max">
+                                <span>до </span>
+                                <input type="number" min="30 000" max="110 000" name="" id="maxPriceInput">
+                                <span> ₽</span>
+                            </div>
+                        </div>
+                        <div id="priceFilter" class="priceFilter"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories">
+                <div class="category"></div>
+                <div class="category"></div>
+                <div class="category"></div>
+                <div class="category"></div>
+                <div class="category"></div>
+            </div>
+            <ul class="product">
+                <!--<li class="product-item">
+                    <div>
+                        <img src="img/paintings/lion.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Царь</p>
+                        <p class="product-size">48x62см</p>
+                        <p class="product-price">55 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div>
+                        <img src="img/paintings/tropical-leaves.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Тропические листья</p>
+                        <p class="product-size">60x100см</p>
+                        <p class="product-price">110 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div>
+                        <img src="img/paintings/mountain-eagle.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Горный орёл</p>
+                        <p class="product-size">40x60см</p>
+                        <p class="product-price">60 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">   
+                    <div>
+                        <img src="img/paintings/mountain-lake.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Горное озеро</p>
+                        <p class="product-size">46х66см</p>
+                        <p class="product-price">50 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div>
+                        <img src="img/paintings/black-peony.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Чёрный пион</p>
+                        <p class="product-size">70х50см</p>
+                        <p class="product-price">50 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">   
+                    <div>
+                        <img src="img/paintings/snow-covered-tree.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Заснеженное дерево</p>
+                        <p class="product-size">80х60см</p>
+                        <p class="product-price">30 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">   
+                    <div>
+                        <img src="img/paintings/white-horse.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Белогривая метелица</p>
+                        <p class="product-size">70x60см</p>
+                        <p class="product-price">45 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">   
+                    <div>
+                        <img src="img/paintings/white-swan.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Лебедь белая</p>
+                        <p class="product-size">40x40см</p>
+                        <p class="product-price">40 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <div>
+                        <img src="img/paintings/black-cat.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Чёрный кот</p>
+                        <p class="product-size">36х76см</p>
+                        <p class="product-price">30 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                    
+                </li>
+                <li class="product-item">   
+                    <div>
+                        <img src="img/paintings/iris.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Ирис</p>
+                        <p class="product-size">50x50см</p>
+                        <p class="product-price">44 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">   
+                    <div>
+                        <img src="img/paintings/mountain-landscape.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Горный пейзаж</p>
+                        <p class="product-size">80х50см</p>
+                        <p class="product-price">62 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>
+                <li class="product-item">   
+                    <div>
+                        <img src="img/paintings/frost.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-title">Иней</p>
+                        <p class="product-size">70х90см</p>
+                        <p class="product-price">89 000 ₽</p>
+                        <span class="orderBtn">Заказать</span>
+                    </div>
+                </li>-->
+
+            </ul>
+        </div>
+    </section>
+
+    <span id="test"></span>
+</body>
+<script src="burger.js"></script>
+<script src="fetch.js" type="module"></script>
+<script src="libs/nouislider.min.js"></script>
+<script src="range-slider.js" type="module"></script>
+<script src="productPage.js" type="module"></script>
+</html>

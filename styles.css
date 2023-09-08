@@ -1,0 +1,1447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: #E4E4E4;
+    margin: 0px;
+    max-width: 1920px;
+    min-width: 350px;
+}
+
+section {
+    margin-bottom: 160px;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Блок 1*/
+.header {
+    color: #E4E4E4;
+    background-image: url("img/banner.jpg"); 
+    margin-bottom: 160px;
+}
+
+.menu-burger {
+    display: block;
+    width: 30px;
+    height: 18px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-burger span {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    &:first-child {
+        top: 0px;
+    }
+    &:last-child {
+        bottom: 0px;
+        top: auto;
+    }
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 222px;
+}
+
+.nav a {
+    color: #E4E4E4;
+    font-weight: 400;
+}
+.nav a img {
+    width: 70px;
+    height: 70px;
+}
+
+.navbtn {
+    margin-left: 50px;
+    transition: all 0.5s;
+}
+
+#mainNavBtn:hover {
+    border-color: #ffecbb;
+}
+
+.navbtn:hover, .tel:hover {
+    color: #ffecbb;
+}
+
+#mainNavBtn {
+    font-weight: 500;
+    margin-left: 180px;
+    border-bottom: 1px #E4E4E4 solid;
+}
+
+.tel {
+    margin-left: auto;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.offer h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.offer p {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 67px;
+}
+
+.LookBtn {
+    display: block;
+    width: 490px;
+    height: 90px;
+    border-radius: 45px;
+    background-color: #FFDF8D;
+    color: #515151;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-right: auto;
+    
+    &:hover{
+        background-color: #ffd774;
+        box-shadow: rgba(255, 223, 141, 0.3) 0px 0px 10px;
+    }
+}
+
+.offer {
+    margin-bottom: 168px;
+}
+
+.socials_text {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 23px;
+}
+
+
+.socials a {
+    justify-items: center;
+    margin-right: 30px;
+}
+
+.socials {
+    padding-bottom: 50px;
+}
+/* Почему мы?*/
+
+.why-we img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 90%;
+}
+
+/* Как всё происходит?*/
+
+.how img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 90%;
+}
+
+
+/*Блок 2*/
+
+
+.headline {
+    text-align: center;
+    color: #515151;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 130px;
+}
+
+.product {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: #414141;
+    margin-bottom: 60px;
+}
+
+.product img {
+    margin: 35px;
+    margin-bottom: 20px;
+}
+
+.product div {
+    background-color: white;
+    border-radius: 30px;
+    width: 425px;
+    height: 570px;
+}
+
+.product p {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.product-size {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product-price {
+   font-size: 24px; 
+   font-weight: 400;
+}
+
+.LookMoreBtn {
+    margin: 0 auto;
+    display: block;
+    width: 440px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #943E3E;
+    color: #E4E4E4;
+    font-weight: 600;
+    font-size: 40px;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color:#882121;
+        box-shadow: rgba(148, 62, 62, 0.3) 0px 0px 10px;
+    }
+}
+
+/*Блок 3*/
+
+
+
+.view_picture img {
+    border-radius: 30px;
+}
+
+.formimage-div {
+    display: flex;
+    width: 100%;
+}
+
+.formimage-div > div:last-of-type {
+    margin-left: auto;
+}
+
+.view_picture h3 {
+    color: #414141;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 80px;
+}
+
+
+form input {
+    border: none;
+    width: 370px;
+    height: 70px;
+    border-radius: 35px;
+    margin-bottom: 25px;
+    background-color: #D9D9D9;
+    padding-left: 35px;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+form input::placeholder {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+form input:focus {
+    outline-color: #717171;
+}
+
+.file_item {
+    position: relative;
+    display: inline-block;
+}
+
+.file_button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color:#E4E4E4;
+    background-color: #414141;
+    width: 405px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+
+}
+
+.file_input {
+    position: absolute;
+    opacity: 0;
+    display: block;
+    width: 405px;
+    height: 50px;
+    z-index: 3;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+
+}
+
+.file {
+    display: flex;
+}
+
+.form1 p {
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.picdiv {
+    width: 1049px;
+}
+
+.formimage-div div:last-of-type > p a {
+    text-decoration: none;
+    color:#8F3333;
+    font-size: 12px;
+}
+
+.formimage-div .div2 > p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0px
+}
+
+
+.formdesc {
+    width: 1049px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-top: 38px;
+}
+
+.form1 button {
+    border: #414141 solid 2px;
+    width: 405px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 40px;
+    margin-bottom: 25px;
+    padding-left: 25x;
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+
+    &:hover {
+        background-color: rgba(65, 65, 65, 0.1);
+    }
+
+    transition: all 0.2s;
+}
+
+
+/* 4 блок*/
+
+
+.reviews img {
+    border-radius: 30px;
+}
+
+.reviews div:last-of-type {
+    margin-left: auto;
+}
+
+
+.reviews .container {
+    display: flex;
+}
+
+.reviews .container div:first-of-type {
+    position: relative;
+}
+
+.reviews h3 {
+    color: #414141;
+    font-weight: 600;
+    font-size: 35px;
+    margin: 90px 0px 80px 0px;
+}
+
+.reviews button {
+    margin: 0 auto;
+    display: block;
+    border: #8F3333 solid 2px;
+    color: #8F3333;
+    font-weight: 500;
+    font-size: 24px;
+    width: 405px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 40px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*---------------------------------*/
+.reviews2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 210px;
+    color: #515151;
+    height: 400px;    
+}
+
+.reviews-markers div {
+    width: 17px;
+    height: 17px;
+    background-color: #515151;
+    border-radius: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.reviews-markers {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 207px;
+    translate : -50% 0;
+    left: 50%;
+}
+
+
+
+.reviews2 .headline {
+    margin-bottom: 100px;
+}
+
+
+.review {
+    width: 1000px;
+    margin-right: 50px;
+    padding: 0.5% 0;
+}
+
+.review-name {
+    font-size: 30px;
+    margin: 0px 0px 30px 0px;
+    font-weight: 500;
+}
+
+.review-text {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.reviews-block {
+    display: flex;
+    width: 6300px;
+    position: relative;
+    left: 0px;
+    transition: all 1s;
+}
+
+.slider {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sliderBtn {
+    width: 5%;
+    height: 5%;
+    opacity: 30%;
+    transition: all 0.5s;
+}
+
+.sliderBtn:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.reviews2 .container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.reviews2 .container img:first-of-type {
+    margin-left: auto;
+}
+
+.reviews2 .container img:last-of-type {
+    margin-right: auto;
+}
+
+.reviews2 > a {
+    position: relative;
+    top: 50px;
+    text-decoration: none;
+    color: #414141;
+    font-weight: normal;
+    transition: all 0.2s;
+    &:hover {
+        color: #882121;
+    }
+}
+
+
+/*Футер*/
+
+
+.footer-div {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: #414141;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer ul div {
+    margin: auto 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E4E4E4;
+    /*margin: auto 0;*/
+    margin-left: 30px;
+    text-align: center;
+}
+
+footer .container {
+    position: relative;
+}
+
+footer ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+footer p {
+    margin: 0px;
+    margin: auto 0;
+    margin-right: auto;
+    color: #E4E4E4;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    margin: 0px;
+}
+
+
+
+/* Адаптация */
+
+@media (max-width: 1660px) {
+    body {
+        font-size: 20px;
+    }
+
+    .nav a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header {
+        max-width: 1660px;
+        height: auto;
+    }
+
+    .nav {
+        margin-bottom: 200px;
+    }
+
+    .offer h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .offer p {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    
+
+    .LookBtn {
+        width: 450px;
+        height: 83px;
+    }
+
+
+    .view_picture h3 {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        font-size: 30px;
+    }
+    
+
+    .view_picture img {
+        width: 900px;
+        height: 530px;
+    }
+
+    .reviews img {
+        width: 900px;
+        height: 530px;
+    }
+    
+
+    .reviews h3 {
+        font-size: 30px;
+    }
+
+    .form1 p {
+        font-size: 16px;
+    }
+    
+
+    .formdesc {
+        width: 900px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    section, .header {
+        margin-bottom: 140px;
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .header {
+        max-width: 1500px;
+        height: auto;
+    }
+
+    .nav {
+        margin-bottom: 170px;
+    }
+
+    .offer h1 {
+        font-size: 40px;
+    }
+
+    .offer p {
+        font-size: 20px;
+    }
+
+    .product div {
+        width: 375px;
+        height: 500px;
+    }
+
+    .product img {
+        height: 320px;
+        width: auto;
+        margin: 20px;
+    }
+
+    .product-title {
+        font-size: 26px;
+    }
+
+    .headline {
+        margin-bottom: 70px;
+    }
+
+    .reviews img,
+    .view_picture img {
+        width: 800px;
+        height: auto;
+    }
+    .form1 button,
+    .reviews button {
+        width: 320px ;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .file_button {
+        width: 320px;
+    }
+
+    form input  {
+        width: 285px;
+    }
+
+    .view_picture h3, .reviews h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .formdesc {
+        width: 800px;
+    }
+
+    .form1 button {
+        margin-bottom: 15px;
+    }
+
+    .formimage-div div:last-of-type > p a, .formimage-div .div2 > p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .reviews img,
+    .view_picture img {
+        width: 700px;
+        height: auto;
+    }
+
+    .form1 button,
+    .reviews button {
+        width: 280px ;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .file_button {
+        width: 280px;
+    }
+
+    form input  {
+        padding-top: 0px;
+        width: 245px;
+        height: 40px;
+    }
+
+    .formdesc {
+        width: 700px;
+    }
+
+    .product div {
+        width: 300px;
+    }
+
+    .file_input {
+        width: 280px;
+    }
+
+
+    .reviews-block {
+        width: 4450px;
+        margin-left: 10%;
+    }
+
+
+    .review-name {
+        font-size: 20px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .header  {
+        max-width: 1200px;
+        max-height: 669px;
+        background-image: url("img/banner1200.jpg");
+        font-size: 14px;
+        margin-bottom: 100px;
+    }
+
+    section {
+        margin-bottom: 100px;
+    }
+
+    .headline {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .nav {
+        margin-bottom: 100px;
+    }
+
+    .offer {
+        margin-bottom: 100px;
+    }
+
+    .offer h1 {
+        font-size: 30px;
+    }
+
+    .offer p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .LookBtn {
+        width: 250px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .nav a img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .socials p {
+        font-size: 9px;
+        margin-bottom: 15px;
+    }
+
+    .socials a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .socials a {
+        margin-right: 19px;
+    }
+
+    .reviews img,
+    .view_picture img {
+        width: 600px;
+        height: auto;
+    }
+
+    .formdesc {
+        margin-top: 10px;
+        width: 600px;
+        font-size: 16px;
+    }
+
+    .view_picture h3 {
+        position: relative;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    form input  {
+        padding-top: 0px;
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    form input::placeholder {
+        font-size: 12px;
+    }
+
+
+    .product div {
+        width: 250px;
+        height: 400px;
+    }
+    
+    .product img {
+        height: 250px;
+        width: auto;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-size {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+
+    .LookMoreBtn {
+        width: 300px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .form1 button,
+    .reviews button {
+        width: 235px ;
+        height: 40px;
+        text-align: center;
+        padding: 0px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .file_button {
+        width: 235px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 10px;
+        margin-bottom: 15px;
+    }
+
+    .file_input {
+        width: 235px;
+        height: 31px;
+    }
+
+    .form1 p {
+        font-size: 10px;
+
+    }
+
+    .formimage-div div:last-of-type > p a, .formimage-div .div2 > p {
+        font-size: 7px;
+    }
+
+    footer .container {
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .list {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    footer a, footer p  {
+        font-size: 14px;
+    }
+
+    .footer-div {
+        height: 70px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .reviews img,
+     .view_picture img {
+        width: 450px;
+    }
+
+    .reviews h3, 
+    .view_picture h3 {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .reviews h3 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+
+    footer p, footer a {
+        font-size: 12px;
+    }
+
+    .formdesc {
+        width: 450px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        margin-bottom: 120px;
+    }
+
+    .header {
+        margin-bottom: 120px;
+    }
+
+    .product {
+        display: block;
+    }
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .product div {
+        margin: 0 auto;
+        width: 50%;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+
+    .product img {
+        height: 60%;
+        width: auto;
+    }
+
+    .product-title {
+        font-size: 30px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .product-size {
+        font-size: 15px;
+    }
+
+    .picdiv {
+        display: none;
+    }
+
+    .formimage-div div:last-of-type {
+        margin: 0px auto;
+    }
+
+    .LookMoreBtn {
+        width: 50%;
+        height: 75px;
+        font-size: 30px;
+    }
+
+
+    .view_picture h3 {
+        font-size: 35px;
+        margin-bottom: 80px;
+    }
+    
+    
+    form input {
+        width: 370px;
+        height: 70px;
+        border-radius: 35px;
+        margin-bottom: 25px;
+        padding-left: 35px;
+        padding-top: 10px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+
+    form input::placeholder {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .form1 p {
+        font-size: 20px;
+    }
+
+    .formimage-div .div2 > p, .formimage-div div:last-of-type > p a {
+        font-size: 12px;
+    }
+
+
+    .file_input {
+        width: 405px;
+        height: 50px;
+        border-radius: 30px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 0px;
+    }
+
+    .file_button {
+        width: 405px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    .form1 button {
+        margin-top: 20px;
+        width: 405px;
+        height: 70px;
+        margin-bottom: 25px;
+        padding-left: 25x;
+        padding-top: 5px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .reviews .container div:first-of-type {
+        margin: 0 auto;
+    }
+
+    .reviews h3 {
+        font-size: 30px;
+    }
+
+    .reviews .container div:last-of-type {
+        display: none;
+    }
+
+    .reviews button {
+        margin-top: 20px;
+        width: 405px;
+        height: 70px;
+        padding-left: 25x;
+        padding-top: 5px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    footer a, footer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .nav {
+        margin-bottom: 70px;
+    }
+
+    .nav a {
+        font-size: 10px;
+    }
+
+    .navbtn {
+        margin-left: 20px;
+    }
+
+    #first {
+        margin-left: 80px;
+    }
+
+    .offer {
+        margin-bottom: 50px;
+    }
+
+    .socials {
+        padding-bottom: 20px;
+    }
+
+    .socials p {
+        font-size: 7px;
+        margin-bottom: 7px;
+    }
+
+    .socials a img {
+        width: 12px;
+        height: 12px;
+    }
+
+    /*.offer h1 {
+        text-align: center;
+    }*/
+
+    footer a {
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #mainNavBtn {
+        margin-left: 0;
+    }
+
+    .nav a {
+        margin: 0;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    .logo_a {
+        position: absolute;
+        left: 50%;
+        translate: -50% 0;
+    }
+
+    .socials a:first-of-type {
+        margin-left: 20px;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    .LookBtn {
+        margin: 0 auto;
+    }
+
+    .header {
+        background-image: none;
+        background-color: #593E31;
+        text-align: center;    }
+
+
+    .nav a img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        left: -150%;
+        flex-direction: column;
+        display: flex;
+        background-color: rgb(143, 134, 129);
+        padding-left: 40px;
+        margin-left: -40px;
+        padding-right: 40px;
+        padding-bottom: 100px;
+        padding-top: 50px;
+        transition: all 0.2s;
+    }
+
+    .nav-body.open {
+        left: 0;
+    }
+
+    .menu-burger span {
+        transition: all 0.2s;
+    }
+
+    .menu-burger.open  span{
+        transform: scale(0);
+        &:first-of-type {
+            transform: rotate(-45deg);
+            top: calc(50% - 1px);
+        }
+    
+        &:last-of-type {
+            transform: rotate(45deg);
+            bottom: calc(50% - 1px);
+        }
+    }
+
+
+    #first {
+        margin: 70px 0 0 0;
+    }
+
+    .nav-body a {
+        margin: 15px 0 0 0;
+        font-size: 20px;
+        z-index: 2;
+    }
+
+    .headline, .view_picture h3, .reviews h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+
+    .product img {
+        height: 60%;
+        width: auto;
+        margin: 10px;
+    }
+
+    .product div {
+        width: 55%;
+        height: 350px;
+        margin-bottom: 30px
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .product-size {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 16px;
+    }
+
+    .LookMoreBtn {
+        width: 40%;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    form input {
+        width: 265px;
+        height: 55px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        padding-left: 35px;
+        padding-top: 5px;
+        font-size: 20px;
+    }
+
+    form input::placeholder {
+        font-size: 20px;
+    }
+
+    .file_button {
+        padding-top: 15px;
+        width: 300px;
+        height: 25px;
+    }
+
+    .file_input {
+        width: 300px;
+        height: 45px; 
+    }
+
+    .form1 p {
+        font-size: 15px;
+    }
+
+    .form1 button, .reviews button {
+        margin-top: 20px;
+        width: 300px;
+        height: 60px;
+        padding-left: 25x;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    section, .header {
+        margin-bottom: 100px;
+    }
+
+    footer p, footer a {
+        font-size: 8px;
+    }
+
+    footer ul div {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .footer-div {
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    footer p, footer a {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    .offer h1 {
+        font-size: 24px;
+        margin: 20px 0; 
+    }
+    
+
+    .offer p {
+        font-size: 13px;
+    }
+
+    .LookMoreBtn {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    footer p, footer a {
+        font-size: 6px;
+    }
+
+    .footer-div {
+        height: 30px;
+    }
+
+    .product img {
+        height: 60%;
+        width: auto;
+        margin: 10px;
+    }
+
+    .product div {
+        height: 300px
+    }
+
+    .product-title {
+        font-size: 15px;
+    }
+
+    .product-size {
+        font-size: 10px;
+    }
+
+    .product-price {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer p, footer a {
+        font-size: 5px;
+    }
+
+    .product div {
+        width: 60%;
+    }
+}

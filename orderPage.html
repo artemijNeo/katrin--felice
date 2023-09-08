@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katrin Felice</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="menu-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a class="logo_a" href="index.html"><img src="img/logo.svg" alt=""></a>
+                <div class="nav-body">
+                    <a class="navbtn" href="index.html" id="mainNavBtn">Главная</a>
+                    <a class="navbtn" href="" id="paintingsNavBtn" >Работы</a>
+                    <a class="navbtn" href="" id="reviewsNavBtn">Отзывы</a>
+                </div>
+                <a class="tel" href="tel:+79650609990">+7 965 060-99-90</a>
+            </div>
+        </div>
+    </header>
+    <section id="orderPageFormSection">
+        <div class="container">
+            <h1>Подверждение заказа</h1>
+            <div class="orderPageProductInfo">
+                <div>
+                    <p id="orderPageName">Царь</p>
+                    <p id="orderPageDesc">Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание Описание<br> </p>
+                    <p id="orderPageSize">Размер: 50x50см</p>
+                    <p id="orderPagePrice">100 000 ₽</p>
+                </div>
+                <img src="img/paintings/lion.png" id="orderPageImg" alt="">
+            </div>
+            
+            <form action="" id="orderPageForm" method="POST">
+                <input type="text" id="emailOrderInput" name="email" class="formInput _req" placeholder="Введите ваш email">
+                <input type="text" id="phoneNumberOrderInput" name="phone"  class="formInput _req" placeholder="Введите ваш номер телефона">
+                <input type="text" id="nameOrderInput" name="name" class="formInput" placeholder="Введите вашe имя">
+                <p>Какой мессенджер вам удобнее?</p>
+                <input type="text" id="messengerOrderInput" name="messenger" class="formInput" placeholder="Напишите ваш вариант">
+                <button type="submit" id="orderPageSubmitBtn">Отправить запрос</button>
+            </form>
+            <p class="submitInfoP">нажимая на кнопку вы даёте согласие <br> на <a href="">обработку персональных данных</a></p>
+            <p class="submitInfoSpan">Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
+    </section>
+    <script src="burger.js"></script>
+    <script src="orderPage.js" type="module"></script>
+</body>
+</html>
